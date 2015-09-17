@@ -16,7 +16,7 @@ class ReportController < ApplicationController
       format.pdf do
         render pdf: 'pdf-file', #filename doesn't matter?
                layout: 'pdf.haml',
-              #  javascript_delay: 60000,
+               javascript_delay: 5000,
                show_as_html: params[:debug]
       end
     end
