@@ -9,9 +9,9 @@ class ReportController < ApplicationController
 
     # Return a PDF
     respond_to do |format|
-      # Only get pdf response if .pdf is added, so we'll add it
+      # Redirect html response to debug
       format.html do
-        redirect_to report_preview_path + '.pdf'
+        redirect_to report_preview_path + '.pdf?debug=1'
       end
       format.pdf do
         render pdf: 'pdf-file', #filename doesn't matter?

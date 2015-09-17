@@ -36,12 +36,13 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
+  # Change these to configure email, I have gmail here as an example
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'example.com',
-    user_name:            'iamkcerb',
-    password:             'baeaphjwepadtyet',
+    user_name:            '',
+    password:             '',
     authentication:       'plain',
     enable_starttls_auto: true  }
 end

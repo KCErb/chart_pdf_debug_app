@@ -1,8 +1,8 @@
 %h1 Debug App!
 
-%p In this app you can either visit /report/preview or /report/preview.pdf and you'll get redirected to a pdf. If you add the debug flag (/report/preview.pdf?debug=1) you should get html.
+%p In this app you can either visit /report/preview to see the html version of the report or /report/preview.pdf and you'll get redirected to a pdf.
 
-%p Try entering your email address below and having the pdf sent to you. That's actually the purpose of this whole thing!
+%p Try entering your email address below and having the pdf sent to you. That's actually the purpose of this whole thing! You'll want to be sure to configure the email in config/environments/development in order to use this though.
 
 = form_tag 'report/generate' do
   = label_tag :email, "Give us your email and we'll send you a PDF of these results"
