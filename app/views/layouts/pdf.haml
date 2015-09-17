@@ -2,7 +2,8 @@
 %html
   %head
   %title Test PDF
-  = wicked_pdf_stylesheet_link_tag    "application", :media =>"all"
-  = wicked_pdf_javascript_include_tag "application"
+  = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
+  = javascript_include_tag "http://code.highcharts.com/highcharts.js"
+  = javascript_include_tag "http://code.highcharts.com/highcharts-more.js"
   %body
     = yield
